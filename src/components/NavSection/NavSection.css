@@ -1,0 +1,63 @@
+:root {
+    --multiplier: 16;
+}
+
+.polaroid{
+    width: calc(var(--multiplier)*29px);
+    height: calc(var(--multiplier)*34px);
+    padding-top: calc(var(--multiplier)*2px);
+    padding-right: calc(var(--multiplier)*2px);
+    /* padding-bottom: calc(var(--multiplier)*7px); */
+    padding-left: calc(var(--multiplier)*2px);
+    background: rgba(245, 245, 245, .9);
+    box-shadow: -4px 4px 7px 2px rgba(0, 0, 0, .2);
+    border-radius: 2px;
+}
+
+.polarimg {
+    width: calc(var(--multiplier)*25px);
+    height: calc(var(--multiplier)*25px);
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.nav-social li {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 2.4em;      
+}
+
+.nav-sidebar {
+    padding: 2em;
+    
+}
+
+.nav-sidebar-items {
+    font-size: 2em;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 3.5em;
+    margin: 5px;        
+    font-weight: 500;
+    text-align: center;
+}
+
+.nav-sidebar-items:hover {
+    text-decoration: underline;
+}
+
+.nav-name{
+    text-align: right;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 4em;    
+    width: 100%;
+}
