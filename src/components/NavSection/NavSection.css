@@ -39,25 +39,40 @@
 
 .nav-sidebar {
     padding: 2em;
-    
+    width: 464px;
 }
 
 .nav-sidebar-items {
     font-size: 2em;
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 3.5em;
-    margin: 5px;        
-    font-weight: 500;
-    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin: 15px;        
+    font-weight: 300;
+    text-align: left;
 }
 
 .nav-sidebar-items:hover {
     text-decoration: underline;
 }
 
+.nav-name-container{
+    background-color: black;
+    width: 380px;
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    padding-left: 15px;
+    
+}
 .nav-name{
-    text-align: right;
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 4em;    
-    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;   
+    font-weight: 500; 
+    color: white;
+}
+
+.nav-section {
+    margin-bottom: 15px;
 }

@@ -8,6 +8,20 @@ export function getAboutInfo() {
   return aboutInfo
 }
 
+export function getNowInfo() {
+    const nowInfo = axios.get( 'http://localhost:8000/api/now' ).then(response => {
+      return response.data
+    });
+    return nowInfo
+}
+
+export function getWritingInfo() {
+    const writingPosts = axios.get( 'http://localhost:8000/api/writing' ).then(response => {
+      return response.data
+    });
+    return writingPosts
+}
+
 // export function getCurrentRank() {
 //   const promise = axios.get( 'http://localhost:8000/api/rank/:gameId' );
 //   store.dispatch( getCurrentRank(promise) );

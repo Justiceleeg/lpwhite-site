@@ -44,6 +44,10 @@ app.put('/api/nav', function(req, res){
   controller.putNavPics(req, res)
 })
 
+app.put('/api/pass', function (req, res){
+  controller.passCheck(req, res)
+})
+
 app.post('/api/writing', function(req, res) {
   controller.postWritingInfo(req, res)
 })
@@ -52,13 +56,8 @@ app.delete('/api/writing', function (req, res) {
   controller.deleteWritingInfo(req, res)
 })
 
-
 // app.get('/api/nav', function(req, res) {
 //     controller.getNavPics(req, res)
-// })
-
-// app.post('/api/userInfo/:user/:score', function(req, res) {
-//   controller.postUserInfo(req, res)
 // })
 
 app.listen(port, function(){

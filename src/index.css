@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700|Reenie+Beanie');
 
 /* font-family: 'Reenie Beanie', cursive;
 font-family: 'Ubuntu', sans-serif; */
@@ -58,4 +58,31 @@ a {
   display: inline-block;
   text-align: left;
   width: 1000px;
+}
+
+.anw-container{
+  width: 690px;
+  margin: 0 auto;
+}
+
+.anw-header{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.anw-line{
+  height: 2px;
+  width: 345px;
+  margin: 4px auto 10px auto; 
+  background-color: black;
+}
+
+.anw-text{
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Raleway', sans-serif;
+  margin: 15px;
+  font-weight: 300;
 }

@@ -1,0 +1,7 @@
+SELECT CASE WHEN EXISTS (
+    SELECT *
+    FROM pass_table
+    WHERE pass = $1
+)
+THEN CAST(1 AS BIT)
+ELSE CAST(0 AS BIT) END

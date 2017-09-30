@@ -69,6 +69,14 @@ module.exports = {
         req.app.get('db').deleteWritingInfo(index).then(function (writingInfo){
             return res.status(200).json(writingInfo);
         })
+    },
+
+    passCheck: function (req, res) {
+        const pass = req.body.pass;
+
+        req.app.get('db').passCheck(pass).then(function (passResults){
+            return res.status(200).json({pass: passResults[0].case==='1'});
+        })
     }
 
 }
